@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "pluralize": "^8.0.0",
+    "random-words": "^1.1.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
