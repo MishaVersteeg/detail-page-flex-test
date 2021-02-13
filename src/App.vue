@@ -1,12 +1,13 @@
 <template>
   <div class="app">
-    <div class="app-container">
+  <div class="app-container">
+
       <FlexContainer :secondaryItemCount="4" />
-      <FlexContainer :secondaryItemCount="6" />
-      <FlexContainer :secondaryItemCount="5" />
-      <FlexContainer :secondaryItemCount="3" />
-      <FlexContainer :secondaryItemCount="7" />
-    </div>
+
+    <FlexContainer :secondaryItemCount="6" />
+    <FlexContainer :secondaryItemCount="5" />
+    <FlexContainer :secondaryItemCount="7" />
+  </div>
   </div>
 </template>
 
@@ -23,7 +24,7 @@ export default {
 <style>
 body,
 html {
-  height: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   background-image: url("./assets/background.jpg");
@@ -32,8 +33,12 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
+/* experimental: */
+* {
+  /* transition: all 1s ease-in-out; */
+}
+
 .app {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,15 +46,23 @@ html {
 
 .app-container {
   max-width: 70%;
+  margin: 3rem 0;
   padding: 3rem;
+  background: rgba(156, 204, 207, 0.294);
+  border-radius: 20px;
+  box-shadow: 5px 10px 30px #888888;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.63);
-  box-shadow: 5px 10px 18px #888888;
 }
 
 .app-container > div:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.border {
+  border: 1px solid pink;
 }
 </style>

@@ -11,8 +11,7 @@ const pluralize = require("pluralize");
 
 export default {
   computed: {
-    randomNumber: () => Math.floor(Math.random() * 1000),
-
+    randomNumber: () => Math.floor(Math.random() * 10000),
     randomWord: () => pluralize(randomWords()),
   },
 };
@@ -27,10 +26,21 @@ export default {
   justify-content: center;
   align-items: center;
 
-  padding:  1rem 0.5rem;
+  padding: 1rem 0.5rem;
 
   box-sizing: border-box;
-  border-right: 0.1rem solid rgb(233, 217, 217);
-  border-bottom: 0.1rem solid rgb(233, 217, 217);
+  border-right: 0.2rem solid rgb(245, 242, 240);;
+  border-bottom: 0.2rem solid rgb(245, 242, 240);;
+}
+.flex-item :first-of-type {
+  text-transform: uppercase;
+  color: rgb(144, 144, 144);
+  /* font-size: 1.2rem; */
+}
+
+.flex-item :last-of-type {
+  text-transform: uppercase;
+  color: rgb(128, 128, 128);
+  font-size: 1.2rem;
 }
 </style>
