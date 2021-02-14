@@ -1,13 +1,11 @@
 <template>
   <div class="app">
-  <div class="app-container">
-
+    <div class="app-container">
       <FlexContainer :secondaryItemCount="4" />
-
-    <FlexContainer :secondaryItemCount="6" />
-    <FlexContainer :secondaryItemCount="5" />
-    <FlexContainer :secondaryItemCount="7" />
-  </div>
+      <FlexContainer :secondaryItemCount="6" />
+      <FlexContainer :secondaryItemCount="5" />
+      <FlexContainer :secondaryItemCount="7" />
+    </div>
   </div>
 </template>
 

@@ -29,13 +29,13 @@ export default {
   padding: 1rem 0.5rem;
 
   box-sizing: border-box;
-  border-right: 0.2rem solid rgb(245, 242, 240);;
-  border-bottom: 0.2rem solid rgb(245, 242, 240);;
+  border-right: 0.2rem solid rgb(245, 242, 240);
+  border-bottom: 0.2rem solid rgb(245, 242, 240);
 }
+
 .flex-item :first-of-type {
   text-transform: uppercase;
   color: rgb(144, 144, 144);
-  /* font-size: 1.2rem; */
 }
 
 .flex-item :last-of-type {
